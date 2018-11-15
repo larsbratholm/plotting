@@ -1,0 +1,3544 @@
+
+ Primary working directories    : /mnt/storage/home/lb17101/scratch/1379454/molpro.rQf7UsgAL5
+ Secondary working directories  : /mnt/storage/home/lb17101/scratch/1379454/molpro.rQf7UsgAL5
+ Wavefunction directory         : /mnt/storage/home/lb17101/optimizations/7/
+ Main file repository           : /mnt/storage/home/lb17101/optimizations/7/
+
+ id        : simonbennie
+
+ Nodes                   nprocs
+ compute075.bc4.acrc.priv    4
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=sf  
+
+
+ Variables initialized (924), CPU time= 0.01 sec
+ memory,536,m
+ 
+ geomtyp=xyz
+ 
+ nosym
+ noorient
+ gdirect
+ angstrom
+ 
+ geometry=input.xyz
+ Including file /mnt/storage/home/lb17101/optimizations/7/input.xyz
+ 
+ set,charge=0
+ 
+ basis=svp
+ df-hf
+ {cf-uks,pbe;}
+ {optg,method=slrf,maxiter=50;
+ constraint,1.800,angstrom,bond,atoms=[H7,C1]
+ constraint,1.200,angstrom,bond,atoms=[H7,C17]
+ constraint,180,deg,angle,atoms=[C1,H7,C17]
+ {slopt;}}
+ {cf-uks,pbe0;}
+ {optg,method=slrf,maxiter=20;
+ constraint,1.800,angstrom,bond,atoms=[H7,C1]
+ constraint,1.200,angstrom,bond,atoms=[H7,C17]
+ constraint,180,deg,angle,atoms=[C1,H7,C17]
+ {slopt;}}
+ {cf-uks,pbe;}
+ basis=tzvp
+ {cf-uks,pbe;}
+ {cf-uks,pbe0;}
+ {uks,pbe0;}
+ {uks,b3lyp;}
+ Commands  initialized (760), CPU time= 0.01 sec, 616 directives.
+ Default parameters read. Elapsed time= 0.05 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2018.1 linked Oct 16 2018 14:32:03
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                 
+  64 bit mpp version                                                                     DATE: 10-Nov-18          TIME: 02:25:18  
+ **********************************************************************************************************************************
+
+ SHA1:             d673ad554fd0a1ae99daa449513f8b88cca0f763
+ **********************************************************************************************************************************
+ SETTING GEOMTYP        =    XYZ
+
+ Variable memory set to  536000000 words,  buffer space 
+
+ ZSYMEL=NOSYM
+ ZUNIT=ANG
+
+ SETTING CHARGE         =     0.00000000D+00                                  
+ SETTING BASIS          =    SVP
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry C      S def2-SVP             selected for orbital group  1
+ Library entry C      P def2-SVP             selected for orbital group  1
+ Library entry C      D def2-SVP             selected for orbital group  1
+ Library entry H      S def2-SVP             selected for orbital group  2
+ Library entry H      P def2-SVP             selected for orbital group  2
+ Library entry N      S def2-SVP             selected for orbital group  8
+ Library entry N      P def2-SVP             selected for orbital group  8
+ Library entry N      D def2-SVP             selected for orbital group  8
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  C0      6.00  -15.316925113    4.888078256   -0.767052243
+   2  C1      6.00  -12.509659000    4.644678157   -1.070390898
+   3  H2      1.00  -16.346413757    3.266393148   -1.611352563
+   4  H3      1.00  -16.060070410    6.659028964   -1.611398073
+   5  H4      1.00  -15.867278179    4.939078915    1.276322047
+   6  C5      6.00  -10.928940534    6.951542313   -0.623723353
+   7  C6      6.00  -11.391119286    2.048705088   -0.721610816
+   8  H7      1.00  -12.064532823    4.811752729   -5.409853371
+   9  H8      1.00  -11.858594393    8.684827474   -1.350707090
+  10  H9      1.00   -9.024283094    6.819447243   -1.489688335
+  11  H10     1.00  -10.607924720    7.281743571    1.443810111
+  12  H11     1.00  -12.564834386    0.660594741   -1.783784990
+  13  H12     1.00  -11.651586181    1.480313562    1.306983776
+  14  C13     6.00   -8.601100060    1.708416740   -1.418172702
+  15  H14     1.00   -8.227734962    2.222762924   -3.417429662
+  16  H15     1.00   -8.014177585   -0.286184374   -1.167620133
+  17  H16     1.00   -7.341877758    2.878713852   -0.220497868
+  18  C17     6.00  -11.862435348    4.823883071   -7.478668950
+  19  N18     7.00  -11.637187328    4.827537747   -9.674272220
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.834078506  1-3  2.098226034  1-4  2.097963589  1-5  2.116806098  2-6  2.831926023
+     ( 1.499729759)     ( 1.110333401)     ( 1.110194521)     ( 1.120165547)     ( 1.498590715)
+
+  2- 7  2.848131811   6- 9  2.096911801   6-10  2.096440894   6-11  2.118201749   7-12  2.105391044
+       ( 1.507166448)       ( 1.109637938)       ( 1.109388745)       ( 1.120904093)       ( 1.114124961)
+
+  7-13  2.122759513   7-14  2.895721310   8-18  2.078698735  14-15  2.097851731  14-16  2.094203473
+       ( 1.123315958)       ( 1.532349726)       ( 1.099999999)       ( 1.110135328)       ( 1.108204753)
+
+ 14-17  2.095151819  18-19  2.207130206
+       ( 1.108706596)       ( 1.167963007)
+
+ Bond angles
+
+  1-2-6  117.77855146   1-2-7  117.01248036   2-1-3  112.12069309   2-1-4  112.35172672
+
+  2- 1- 5  111.27971143   2- 6- 9  111.78876771   2- 6-10  112.99419310   2- 6-11  111.44020680
+
+  2- 7-12  108.67630802   2- 7-13  108.23366762   2- 7-14  117.13216098   3- 1- 4  108.46167851
+
+  3- 1- 5  106.22951316   4- 1- 5  106.02553003   6- 2- 7  120.26137390   7-14-15  111.83345378
+
+  7-14-16  110.68168460   7-14-17  112.08183597   8-18-19  179.63297686   9- 6-10  108.15949919
+
+  9- 6-11  106.06536737  10- 6-11  105.98101855  12- 7-13  103.72019587  12- 7-14  109.77304899
+
+ 13- 7-14  108.45956817  15-14-16  107.31683745  15-14-17  107.50922167  16-14-17  107.16800153
+
+ NUCLEAR CHARGE:                   55
+ NUMBER OF PRIMITIVE AOS:         259
+ NUMBER OF SYMMETRY AOS:          252
+ NUMBER OF CONTRACTIONS:          158   (  158A   )
+ NUMBER OF CORE ORBITALS:           7   (    7A   )
+ NUMBER OF VALENCE ORBITALS:       40   (   40A   )
+
+
+ NUCLEAR REPULSION ENERGY  275.70817015
+
+
+ Eigenvalues of metric
+
+         1 0.193E-02 0.310E-02 0.390E-02 0.405E-02 0.652E-02 0.110E-01 0.215E-01 0.232E-01
+
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.51      0.38
+ REAL TIME  *         0.85 SEC
+ DISK USED  *        31.83 MB (local),      127.32 MB (total)
+ GA USED    *         0.00 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+
+
+ PROGRAM * RHF-SCF (OPEN SHELL)       Authors: W. Meyer, H.-J. Werner
+
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-07 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.60 (CLOSED) -0.30 (OPEN) 
+
+
+
+
+ Basis set DEF2-SVP/JKFIT generated.     Number of basis functions:   560 
+
+ Orbital guess generated from atomic densities. Full valence occupancy:   28
+ Using density fitting in orbital guess
+
+ Coulomb and exchange fitting
+ Thresholds for fitting:       THRAO_COUL= 1.0D-14    THRAO_EXCH= 1.0D-12    THRMO= 1.0D-11    THRPROD= 1.0D-11    THRASM= 1.0D-11
+                               THR2HLF=    1.0D-11
+
+ Molecular orbital dump at record        2100.2
+
+ Initial alpha occupancy:  28
+ Initial beta  occupancy:  27
+ Wave function symmetry:    1
+
+ ITERATION   DDIFF            GRAD            ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   CPU(IT)  CPU(TOT)  ORB.
+    1      0.000D+00      0.000D+00      -288.25653108    743.427118   -0.20611   -0.03282    2.24955    0      0.2      0.5     start
+    2      0.000D+00      0.404D-02      -288.33743391    740.463678   -0.12968   -0.03912    1.76432    1      0.2      0.7     diag,B
+    3      0.326D-02      0.159D-02      -288.35408585    740.537927   -0.13062   -0.04387    1.76760    2      0.2      0.9     diag,B
+    4      0.172D-02      0.766D-03      -288.36085477    740.506910   -0.11869   -0.04677    1.67918    3      0.2      1.1     diag,B
+    5      0.163D-02      0.217D-03      -288.36155294    740.466718   -0.11622   -0.04505    1.65893    4      0.2      1.3     diag,B
+    6      0.673D-03      0.760D-04      -288.36165427    740.440907   -0.11505   -0.04372    1.64661    5      0.2      1.4     diag,B
+    7      0.303D-03      0.227D-04      -288.36166362    740.433141   -0.11464   -0.04323    1.64196    6      0.2      1.7     fixocc
+    8      0.786D-04      0.773D-05      -288.36166489    740.432495   -0.11448   -0.04309    1.64001    7      0.2      1.8     diag,B
+    9      0.316D-04      0.272D-05      -288.36166507    740.432757   -0.11445   -0.04307    1.63943    8      0.2      2.0     diag,B
+   10      0.174D-04      0.804D-06      -288.36166509    740.432894   -0.11445   -0.04308    1.63939    9      0.2      2.2     orth
+   11      0.584D-05      0.243D-06      -288.36166509    740.432896   -0.11445   -0.04308    1.63942    9      0.2      2.4     diag,B
+   12      0.155D-05      0.737D-07      -288.36166509    740.432889   -0.11445   -0.04308    1.63944    9      0.2      2.6     diag,B
+   13      0.311D-06      0.320D-07      -288.36166509    740.432885   -0.11445   -0.04308    1.63944    0      0.2      2.8     orth
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !RHF STATE  1.1 Energy              -288.361665089848
+ Nuclear energy                       275.70817015
+ One-electron energy                 -934.28627784
+ Two-electron energy                  370.21644260
+ Virial quotient                       -1.00680784
+ !RHF STATE  1.1 Dipole moment         -0.11445169    -0.04308226     1.63943652
+ Dipole moment /Debye                  -0.29088811    -0.10949701     4.16675908
+
+ Orbital energies:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -15.592641   -11.291335   -11.246750   -11.244969   -11.243934   -11.242577   -11.239168    -1.205717    -1.088407    -0.997104
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.940315    -0.861368    -0.781930    -0.724005    -0.631077    -0.624398    -0.598168    -0.575224    -0.565807    -0.547432
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.545110    -0.525552    -0.501852    -0.488453    -0.484725    -0.481223    -0.480751    -0.353407     0.152478     0.161665
+
+
+ HOMO     28.1    -0.353407 =      -9.6167eV
+ LUMO     29.1     0.152478 =       4.1492eV
+ LUMO-HOMO         0.505885 =      13.7658eV
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2       4        3.88       700     1000      520     2100   
+                                         GEOM     BASIS   MCVARS     RHF  
+
+ PROGRAMS   *        TOTAL     DF-HF       INT
+ CPU TIMES  *         3.32      2.81      0.38
+ REAL TIME  *         3.87 SEC
+ DISK USED  *        38.78 MB (local),      155.11 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group PBE=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+ Functional: PBEX                      Factor:  1.0000
+ Functional: PBEC                      Factor:  1.0000
+
+ Generated new metagrid on record  1800.2 with target accuracy 1.0D-06 and 65784 points in CPU time    0.5
+ Computed new grid on record 1800.1 in CPU time    0.6
+  129907 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+
+ Basis set DEF2-SVP/JFIT generated.      Number of basis functions:   475 
+ Coulomb fitting
+ Screening thresholds:    THRAO_COUL= 1.0D-14    THRAO= 1.0D-12    THROV= 1.0D-12
+
+ Reserved 1 MW to cache 100.0% of significant integrals (4 MW global). CPU: 0.1 sec
+
+ Molecular orbitals read from record     2100.2  Type=RHF/CANONICAL (state 1.1)
+
+ Molecular orbital dump at record        2200.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS  CPU(IT) CPU(TOT)
+    1      0.000D+00      0.000D+00      -289.87050375    823.934242   -0.11445   -0.04308    1.63944    0      0.2      0.3
+    2      0.429D-02      0.217D-02      -289.91259013    827.062708   -0.10690   -0.04937    1.55566    1      0.2      0.5
+    3      0.153D-02      0.457D-03      -289.91660101    825.696081   -0.10381   -0.04674    1.54245    2      0.2      0.6
+    4      0.834D-03      0.208D-03      -289.91769905    826.227713   -0.10385   -0.05030    1.51656    3      0.2      0.8
+    5      0.337D-03      0.928D-04      -289.91786070    826.157874   -0.10686   -0.04941    1.56732    4      0.2      0.9
+    6      0.190D-03      0.897D-04      -289.91797801    826.078895   -0.10312   -0.04981    1.53883    5      0.2      1.1
+    7      0.959D-04      0.220D-04      -289.91799471    826.097063   -0.10419   -0.05056    1.54440    6      0.2      1.3
+    8      0.371D-04      0.875D-05      -289.91799683    826.094263   -0.10355   -0.05059    1.54414    7      0.2      1.4
+    9      0.129D-04      0.279D-05      -289.91799707    826.096370   -0.10363   -0.05055    1.54438    8      0.2      1.6
+   10      0.593D-05      0.130D-05      -289.91799711    826.094738   -0.10360   -0.05061    1.54427    8      0.2      1.8
+   11      0.233D-05      0.298D-06      -289.91799711    826.094855   -0.10360   -0.05062    1.54421    8      0.2      1.9
+   12      0.668D-06      0.111D-06      -289.91799712    826.094924   -0.10361   -0.05061    1.54421    8      0.2      2.1
+   13      0.420D-06      0.682D-07      -289.91799712    826.094860   -0.10360   -0.05061    1.54419    7      0.2      2.2
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -289.917997115507
+ Nuclear energy                       275.70817015
+ One-electron energy                 -935.39562354
+ Two-electron energy                  413.04742977
+ Density functional                   -43.27797350     PBEX=-41.51503390 PBEC= -1.76293960
+ Virial quotient                       -1.01214346
+ !UKS STATE  1.1 Dipole moment         -0.10360472    -0.05061141     1.54418668
+ Dipole moment /Debye                  -0.26331970    -0.12863294     3.92467397
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.001646    -9.936594    -9.924487    -9.912447    -9.907742    -9.906695    -9.901996    -0.811440    -0.743548    -0.670299
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.629061    -0.571142    -0.522383    -0.480687    -0.418081    -0.416680    -0.394820    -0.376360    -0.351639    -0.348992
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.332703    -0.317068    -0.310681    -0.308824    -0.308464    -0.305407    -0.303193    -0.161479    -0.017647    -0.014435
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.001645    -9.935992    -9.913073    -9.912263    -9.908386    -9.907369    -9.901869    -0.811127    -0.731794    -0.667411
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.626776    -0.568035    -0.519294    -0.469213    -0.413309    -0.409254    -0.389743    -0.370902    -0.347691    -0.347279
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.331599    -0.313815    -0.310378    -0.308083    -0.308056    -0.302630    -0.299344    -0.096959    -0.016958    -0.013646
+
+
+ HOMO     28.1    -0.161479 =      -4.3941eV
+ LUMO    -28.1    -0.096959 =      -2.6384eV
+ LUMO-HOMO         0.064520 =       1.7557eV
+
+ EXPECTATION VALUE OF S**2:             0.75315631
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   27
+ Number of active natural orbitals per symmetry:               1
+
+ Natural orbitals saved to record    2200.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2       6        7.61       700     1000      520     2100     1800     2200   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS  
+
+ PROGRAMS   *        TOTAL    DF-UKS     DF-HF       INT
+ CPU TIMES  *         6.23      2.91      2.81      0.38
+ REAL TIME  *         6.89 SEC
+ DISK USED  *        38.89 MB (local),      155.54 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.17 MB       (current)
+ **********************************************************************************************************************************
+
+
+ PROGRAM * OPT (Geometry optimization)     Authors: F. Eckert and H.-J. Werner
+
+
+ BFGS update of hessian
+
+
+********** USER DEFINED INT/FIX/CONSTRAINTS ****************
+
+List of primitive internal coordinates
+
+     N      Name     Type   Natoms   Atom list
+
+     1    Bo0001     Bond        2      H7   C1  
+     2    Bo0002     Bond        2      H7   C17 
+     3    An0001     Angle       3      C1   H7   C17 
+
+List of user defined internal/fixed coordinates and constraints
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    N      Name   Type      Pname     Coeff       Value   Unit
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    1    Cns001    Con     Bo0001     1.000     1.80000 Angstrom
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    2    Cns002    Con     Bo0002     1.000     1.20000 Angstrom
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    3    Cns003    Con     An0001     1.000   180.00000   Degree
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+******************************************************************
+
+
+
+ *** Long output written to logfile /mnt/storage/home/lb17101/optimizations/7/7_1.80_1.20.log ***
+
+
+ Geometry optimization using default procedure for command CF-UKS-SCF
+
+ Geometry written to block  1 of record 700
+
+ SLAPAF optimizer by R. Lindh and Ignacio F. Galvan entered
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  2.310086 / Angstrom  4.365431 / bohr
+ BO0002   : Bond Length=  1.100000 / Angstrom  2.078699 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.1204   / Degree    3.108788 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      4.365431  3.401507
+ Cns002      2.078699  2.267671
+ Cns003      3.108788  3.141593
+
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS   CPU-time
+   1  -289.91799712  -289.91796672     0.00003040  0.00120714  0.00190236  0.00025197  0.11731227  0.29802796  0.00522856      3.83
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  2.232237 / Angstrom  4.218316 / bohr
+ BO0002   : Bond Length=  1.115262 / Angstrom  2.107540 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      177.8727   / Degree    3.104464 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      4.218316  3.401507
+ Cns002      2.107540  2.267671
+ Cns003      3.104464  3.141593
+
+   2  -289.91796672  -289.91786877     0.00009794  0.00937093  0.01191348  0.00157798  0.47288255  0.90288700  0.01584012      7.27
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  2.185510 / Angstrom  4.130016 / bohr
+ BO0002   : Bond Length=  1.124423 / Angstrom  2.124851 / bohr
+ AN0001   : Angle=      177.3138   / Degree    3.094710 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      4.130016  3.401507
+ Cns002      2.124851  2.267671
+ Cns003      3.094710  3.141593
+
+   3  -289.91786877  -289.91678789     0.00108088  0.01150261  0.01471904  0.00194958  0.26872243  0.70302146  0.01233371     10.99
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  2.056280 / Angstrom  3.885806 / bohr
+ BO0002   : Bond Length=  1.149758 / Angstrom  2.172727 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.0721   / Degree    3.107944 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.885806  3.401507
+ Cns002      2.172727  2.267671
+ Cns003      3.107944  3.141593
+
+   4  -289.91678789  -289.91602824     0.00075964  0.02599686  0.03478585  0.00460750  0.35140377  0.74473060  0.01306545     14.46
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.962960 / Angstrom  3.709457 / bohr
+ BO0002   : Bond Length=  1.168053 / Angstrom  2.207300 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      177.5832   / Degree    3.099411 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.709457  3.401507
+ Cns002      2.207300  2.267671
+ Cns003      3.099411  3.141593
+
+   5  -289.91602824  -289.91385536     0.00217288  0.02991080  0.04094615  0.00542345  0.28377708  0.76740911  0.01346332     18.28
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.843526 / Angstrom  3.483759 / bohr
+ BO0002   : Bond Length=  1.191467 / Angstrom  2.251547 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.9829   / Degree    3.123840 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.483759  3.401507
+ Cns002      2.251547  2.267671
+ Cns003      3.123840  3.141593
+
+   6  -289.91385536  -289.91346833     0.00038703  0.03152062  0.03889572  0.00515186  0.32192210  0.59176243  0.01038180     21.82
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.3331   / Degree    3.112499 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.112499  3.141593
+
+   7  -289.91346833  -289.91353757    -0.00006924  0.03245195  0.04463819  0.00591247  0.32220543  0.60919807  0.01068769     25.50
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267672 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      177.9326   / Degree    3.105510 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267672  2.267671
+ Cns003      3.105510  3.141593
+
+   8  -289.91353757  -289.91363401    -0.00009645  0.03292580  0.04601987  0.00609548  0.20556714  0.33699386  0.00591217     29.21
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.6329   / Degree    3.117732 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.117732  3.141593
+
+   9  -289.91363401  -289.91360698     0.00002703  0.03265909  0.04305280  0.00570248  0.23218597  0.41784053  0.00733054     32.76
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8834   / Degree    3.139557 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139557  3.141593
+
+  10  -289.91360698  -289.91371079    -0.00010381  0.03225065  0.04372400  0.00579138  0.16406483  0.28243910  0.00495507     36.26
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.4953   / Degree    3.132784 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.132784  3.141593
+
+  11  -289.91371079  -289.91374058    -0.00002979  0.03228652  0.04336032  0.00574321  0.09343931  0.26121736  0.00458276     39.61
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.1404   / Degree    3.126589 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.126589  3.141593
+
+  12  -289.91374058  -289.91376678    -0.00002620  0.03209809  0.04411639  0.00584336  0.08604263  0.18540156  0.00325266     42.97
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.9898   / Degree    3.123961 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.123961  3.141593
+
+  13  -289.91376678  -289.91374315     0.00002363  0.03194354  0.04320281  0.00572235  0.06303912  0.10110098  0.00177370     46.26
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.7760   / Degree    3.137683 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.137683  3.141593
+
+  14  -289.91374315  -289.91374770    -0.00000455  0.03202442  0.04312819  0.00571247  0.03025666  0.07061447  0.00123885     49.38
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8796   / Degree    3.139491 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139491  3.141593
+
+  15  -289.91374770  -289.91376861    -0.00002091  0.03207114  0.04305699  0.00570304  0.02807471  0.07887729  0.00138381     52.84
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8632   / Degree    3.139206 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139206  3.141593
+
+  16  -289.91376861  -289.91377148    -0.00000287  0.03215897  0.04387034  0.00581077  0.03719903  0.06571384  0.00115287     55.87
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8555   / Degree    3.139071 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139071  3.141593
+
+  17  -289.91377148  -289.91378258    -0.00001110  0.03215638  0.04358296  0.00577270  0.02267471  0.05665194  0.00099389     59.00
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8177   / Degree    3.138410 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.138410  3.141593
+
+  18  -289.91378258  -289.91378485    -0.00000227  0.03215155  0.04304703  0.00570172  0.02914268  0.05858646  0.00102783     62.09
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.7938   / Degree    3.137994 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.137994  3.141593
+
+  19  -289.91378485  -289.91380554    -0.00002069  0.03216538  0.04303631  0.00570030  0.13189502  0.22556143  0.00395722     65.54
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.2982   / Degree    3.129344 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.129344  3.141593
+
+  20  -289.91380554  -289.91353731     0.00026823  0.03218003  0.04401210  0.00582955  0.50405647  0.92401475  0.01621079     69.32
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+ AN0001   : Angle=      173.3323   / Degree    3.025220 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.025220  3.141593
+
+  21  -289.91353731  -289.91376046    -0.00022315  0.03199407  0.04212064  0.00557902  0.33246527  0.73582560  0.01290922     73.02
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.199999 / Angstrom  2.267670 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.6904   / Degree    3.136190 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267670  2.267671
+ Cns003      3.136190  3.141593
+
+  22  -289.91376046  -289.91378244    -0.00002198  0.03224684  0.04359637  0.00577448  0.04294900  0.08442808  0.00148119     76.29
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.9899   / Degree    3.141416 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.141416  3.141593
+
+  23  -289.91378244  -289.91379424    -0.00001180  0.03220437  0.04345714  0.00575604  0.02125573  0.04235052  0.00074299     79.31
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.9840   / Degree    3.141314 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.141314  3.141593
+
+  24  -289.91379424  -289.91379598    -0.00000174  0.03219608  0.04324201  0.00572754  0.01307461  0.03734233  0.00065513     82.47
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.9763   / Degree    3.141179 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.141179  3.141593
+
+  25  -289.91379598  -289.91382415    -0.00002817  0.03218178  0.04308718  0.00570704  0.01222814  0.02635469  0.00046236     85.41
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8559   / Degree    3.139077 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139077  3.141593
+
+  26  -289.91382415  -289.91380870     0.00001545  0.03217310  0.04314184  0.00571428  0.04079878  0.06491214  0.00113881     88.40
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.5123   / Degree    3.133081 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.133081  3.141593
+
+  27  -289.91380870  -289.91378907     0.00001963  0.03220030  0.04354423  0.00576757  0.03469696  0.06386658  0.00112047     91.90
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.9772   / Degree    3.141194 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.141194  3.141593
+
+  28  -289.91378907  -289.91379881    -0.00000974  0.03216237  0.04273740  0.00566071  0.13091452  0.28669779  0.00502979     95.49
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      177.9256   / Degree    3.105387 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.105387  3.141593
+
+  29  -289.91379881  -289.91376762     0.00003120  0.03223260  0.04502105  0.00596318  0.21561010  0.41423563  0.00726729     99.15
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.4970   / Degree    3.132814 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.132814  3.141593
+
+  30  -289.91376762  -289.91382994    -0.00006232  0.03203844  0.03902479  0.00516896  0.09912476  0.22000368  0.00385971    102.70
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.2297   / Degree    3.110695 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.110695  3.141593
+
+  31  -289.91382994  -289.91384127    -0.00001133  0.03220428  0.04332790  0.00573892  0.07484086  0.13478632  0.00236467    105.93
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8450   / Degree    3.138888 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.138888  3.141593
+
+  32  -289.91384127  -289.91358048     0.00026079  0.03216813  0.04366795  0.00578396  0.41889077  0.78173904  0.01371472    109.76
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+ AN0001   : Angle=      174.3217   / Degree    3.042488 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.042488  3.141593
+
+  33  -289.91358048  -289.91379895    -0.00021846  0.04023417  0.05370778  0.00711377  0.29000042  0.60094127  0.01054283    113.37
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267672 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.5214   / Degree    3.115787 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267672  2.267671
+ Cns003      3.115787  3.141593
+
+  34  -289.91379895  -289.91372373     0.00007522  0.03659280  0.04972426  0.00658614  0.12431696  0.17064694  0.00299381    116.87
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.1276   / Degree    3.108914 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.108914  3.141593
+
+  35  -289.91372373  -289.91378427    -0.00006054  0.03176708  0.03802637  0.00503672  0.16748085  0.28090981  0.00492824    120.49
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.5536   / Degree    3.133801 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.133801  3.141593
+
+  36  -289.91378427  -289.91385148    -0.00006721  0.03530149  0.04865679  0.00644475  0.05690366  0.11346610  0.00199063    123.90
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8864   / Degree    3.139610 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139610  3.141593
+
+  37  -289.91385148  -289.91377589     0.00007559  0.03209991  0.04135938  0.00547818  0.10746375  0.21584584  0.00378677    127.50
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.1857   / Degree    3.127381 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.127381  3.141593
+
+  38  -289.91377589  -289.91383771    -0.00006183  0.03218757  0.04492232  0.00595011  0.07230088  0.14705376  0.00257989    130.83
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.9814   / Degree    3.141268 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.141268  3.141593
+
+  39  -289.91383771  -289.91387070    -0.00003298  0.03220086  0.04490069  0.00594724  0.02562420  0.04391054  0.00077036    134.03
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.7728   / Degree    3.137628 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.137628  3.141593
+
+  40  -289.91387070  -289.91380544     0.00006525  0.03215390  0.04306153  0.00570364  0.01833240  0.02771847  0.00048629    136.94
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8438   / Degree    3.138867 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.138867  3.141593
+
+  41  -289.91380544  -289.91384777    -0.00004233  0.03216882  0.04327433  0.00573183  0.02216125  0.03348185  0.00058740    139.99
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.5565   / Degree    3.133853 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.133853  3.141593
+
+  42  -289.91384777  -289.91383857     0.00000920  0.03215283  0.04281143  0.00567051  0.04234966  0.07544181  0.00132354    143.44
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.2963   / Degree    3.129310 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.129310  3.141593
+
+  43  -289.91383857  -289.91380460     0.00003397  0.03218417  0.04362155  0.00577782  0.09437871  0.14956402  0.00262393    146.78
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.0230   / Degree    3.124540 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.124540  3.141593
+
+  44  -289.91380460  -289.91380804    -0.00000343  0.03208375  0.04138529  0.00548162  0.15624429  0.24573312  0.00431111    150.39
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      177.7542   / Degree    3.102396 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.102396  3.141593
+
+  45  -289.91380804  -289.91380924    -0.00000120  0.03222926  0.04468103  0.00591815  0.17775206  0.26417616  0.00463467    154.03
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.5385   / Degree    3.116085 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.116085  3.141593
+
+  46  -289.91380924  -289.91379106     0.00001818  0.03197460  0.03920736  0.00519314  0.19980544  0.29652531  0.00520220    157.62
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+ AN0001   : Angle=      177.0639   / Degree    3.090348 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.090348  3.141593
+
+  47  -289.91379106  -289.91383307    -0.00004201  0.03600833  0.04928024  0.00652733  0.17987081  0.28594801  0.00501663    161.24
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.7825   / Degree    3.120343 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.120343  3.141593
+
+  48  -289.91383307  -289.91375083     0.00008224  0.03384287  0.04745912  0.00628611  0.15734418  0.27039914  0.00474384    164.89
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.1279   / Degree    3.108918 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.108918  3.141593
+
+  49  -289.91375083  -289.91378907    -0.00003824  0.03218641  0.04404835  0.00583435  0.21142374  0.31491854  0.00552489    168.36
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      177.7200   / Degree    3.101800 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.101800  3.141593
+
+ Geometry section
+ Geometry section
+  50  -289.91378907  -289.91377960     0.00000947  0.03200275  0.04162550  0.00551343  0.13765225  0.23938178  0.00419968    172.05
+ ? Warning
+ ? No convergence in max. number of iterations
+
+ END OF GEOMETRY OPTIMIZATION.
+
+ Current geometry (xyz format, in Angstrom)
+
+   19
+ CF-UKS-SCF000/SVP  ENERGY=-289.91377960
+ C         -8.0769198779        2.5974735741       -0.5517566388
+ C         -6.5861077267        2.4652325596       -0.6677965989
+ H         -8.6118764824        1.7402596634       -1.0099066744
+ H         -8.4508582440        3.5343235841       -1.0152503532
+ H         -8.3905316303        2.6295107082        0.5219040103
+ C         -5.7575572349        3.6823578162       -0.3769211744
+ C         -6.0099272552        1.0892841209       -0.4353109022
+ H         -6.4821702749        2.5019910296       -2.4644172671
+ H         -6.2296399689        4.6036056614       -0.7750107385
+ H         -4.7307195890        3.6132572335       -0.7887320006
+ H         -5.6438527528        3.8341479164        0.7259649529
+ H         -6.6166131321        0.3489810120       -1.0050239702
+ H         -6.1927757447        0.8180160111        0.6381710527
+ C         -4.5231659161        0.8992475749       -0.7491389504
+ H         -4.2924707846        1.1543040435       -1.8044440166
+ H         -4.2253015289       -0.1560256866       -0.5894589250
+ H         -3.8755506039        1.5246210753       -0.1020838694
+ C         -6.4036691964        2.5330937559       -3.6614428123
+ N         -6.3123720564        2.5560583465       -4.8281251237
+
+ **********************************************************************************************************************************
+
+ Geometry written to block  1 of record 700
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2       7        8.66       700     1000      520     2100     1800     2200      520(1)
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS    
+
+ PROGRAMS   *        TOTAL      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       178.28    172.05      2.91      2.81      0.38
+ REAL TIME  *       187.16 SEC
+ DISK USED  *        43.33 MB (local),      173.30 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.21 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group PBE0=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2500
+
+ Functional: PBEX                      Factor:  0.7500
+ Functional: PBEC                      Factor:  1.0000
+
+  129907 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+
+ Coulomb fitting
+ Screening thresholds:    THRAO_COUL= 1.0D-14    THRAO= 1.0D-12    THROV= 1.0D-12
+
+ Reserved 2 MW to cache 100.0% of significant integrals (8 MW global). CPU: 0.1 sec
+
+ Molecular orbitals read from record     2200.2  Type=UKS/ALPHA (state 1.1)
+ Molecular orbitals read from record     2200.2  Type=UKS/BETA (state 1.1)
+
+ Molecular orbital dump at record        2201.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ Direct Fock-matrix evaluation.        Author: H.-J. Werner (1996)
+
+ Integral Threshold:                  0.1D-09
+
+ ITERATION   DDIFF            GRAD            ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   CPU(IT)  CPU(TOT)
+    1      0.000D+00      0.000D+00      -289.95169272    817.408500   -0.07022   -0.07881    1.83481    0      2.5      2.6
+    2      0.158D-02      0.580D-03      -289.95483851    816.965617   -0.07366   -0.07774    1.86567    1      2.2      4.8
+    3      0.600D-03      0.130D-03      -289.95525322    817.142868   -0.07502   -0.07808    1.87979    2      2.1      6.9
+    4      0.290D-03      0.547D-04      -289.95536210    817.075371   -0.07626   -0.07774    1.89361    3      2.1      9.0
+    5      0.107D-03      0.306D-04      -289.95538453    817.117404   -0.07600   -0.07786    1.88441    4      2.0     11.0
+    6      0.443D-04      0.202D-04      -289.95539112    817.137136   -0.07681   -0.07787    1.89021    5      2.0     13.1
+    7      0.234D-04      0.640D-05      -289.95539264    817.126414   -0.07673   -0.07769    1.88878    6      2.0     15.1
+    8      0.727D-05      0.201D-05      -289.95539281    817.126492   -0.07682   -0.07766    1.88857    7      2.0     17.1
+    9      0.347D-05      0.115D-05      -289.95539287    817.126689   -0.07684   -0.07763    1.88845    8      2.0     19.1
+   10      0.968D-06      0.663D-06      -289.95539291    817.126748   -0.07684   -0.07762    1.88849    8      2.0     21.1
+   11      0.563D-06      0.422D-06      -289.95539292    817.126615   -0.07685   -0.07761    1.88850    9      2.0     23.1
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -289.955392923201
+ Nuclear energy                       281.79781011
+ One-electron energy                 -947.42204954
+ Two-electron energy                  408.56330744
+ Density functional                   -32.89446094     PBEX=-41.50179180 PBEC= -1.76811708
+ Virial quotient                       -1.01242404
+ !UKS STATE  1.1 Dipole moment         -0.07684885    -0.07761020     1.88849808
+ Dipole moment /Debye                  -0.19531749    -0.19725254     4.79976894
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.389847   -10.275102   -10.267506   -10.255670   -10.250629   -10.250406   -10.241916    -0.905641    -0.854278    -0.768085
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.723481    -0.658813    -0.586139    -0.549436    -0.486272    -0.481906    -0.461759    -0.442175    -0.416441    -0.411196
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.394484    -0.377418    -0.370435    -0.364829    -0.361978    -0.348032    -0.347851    -0.224983     0.031425     0.034913
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.390029   -10.264614   -10.260987   -10.256494   -10.251480   -10.251288   -10.241774    -0.904175    -0.837901    -0.764761
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.721071    -0.654884    -0.567261    -0.536586    -0.482198    -0.471925    -0.454739    -0.434267    -0.410148    -0.409654
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.393126    -0.373068    -0.368526    -0.361166    -0.357978    -0.346755    -0.346541    -0.078279     0.033805     0.037645
+
+
+ HOMO     28.1    -0.224983 =      -6.1221eV
+ LUMO    -28.1    -0.078279 =      -2.1301eV
+ LUMO-HOMO         0.146704 =       3.9920eV
+
+ EXPECTATION VALUE OF S**2:             0.75488414
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   27
+ Number of active natural orbitals per symmetry:               1
+
+ Natural orbitals saved to record    2201.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2       8       12.17       700     1000      520     2100     1800     2200      520(1)  2201   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS  
+
+ PROGRAMS   *        TOTAL    DF-UKS      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       201.43     23.15    172.05      2.91      2.81      0.38
+ REAL TIME  *       211.07 SEC
+ DISK USED  *        43.44 MB (local),      173.76 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.21 MB       (current)
+ **********************************************************************************************************************************
+
+
+ PROGRAM * OPT (Geometry optimization)     Authors: F. Eckert and H.-J. Werner
+
+
+ BFGS update of hessian
+
+
+********** USER DEFINED INT/FIX/CONSTRAINTS ****************
+
+List of primitive internal coordinates
+
+     N      Name     Type   Natoms   Atom list
+
+     1    Bo0001     Bond        2      H7   C1  
+     2    Bo0002     Bond        2      H7   C17 
+     3    An0001     Angle       3      C1   H7   C17 
+
+List of user defined internal/fixed coordinates and constraints
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    N      Name   Type      Pname     Coeff       Value   Unit
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    1    Cns001    Con     Bo0001     1.000     1.80000 Angstrom
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    2    Cns002    Con     Bo0002     1.000     1.20000 Angstrom
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    3    Cns003    Con     An0001     1.000   180.00000   Degree
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+******************************************************************
+
+
+
+ Geometry optimization using default procedure for command CF-UKS-SCF
+
+ Geometry written to block  1 of record 700
+
+ SLAPAF optimizer by R. Lindh and Ignacio F. Galvan entered
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.4580   / Degree    3.132133 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.132133  3.141593
+
+
+ ITER.   ENERGY(OLD)    ENERGY(NEW)      DE          GRADMAX     GRADNORM    GRADRMS     STEPMAX     STEPLEN     STEPRMS   CPU-time
+   1  -289.95539292  -289.95641148    -0.00101856  0.04088530  0.05593792  0.00740916  0.02646041  0.08397851  0.00147331     28.18
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8893   / Degree    3.139661 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139661  3.141593
+
+   2  -289.95641148  -289.95649763    -0.00008615  0.04134733  0.05824075  0.00771418  0.06082032  0.10375753  0.00182031     56.59
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      178.8398   / Degree    3.121344 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.121344  3.141593
+
+   3  -289.95649763  -289.95649219     0.00000544  0.04132697  0.05675468  0.00751734  0.05681393  0.08499805  0.00149119     82.64
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8392   / Degree    3.138786 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.138786  3.141593
+
+   4  -289.95649219  -289.95649610    -0.00000391  0.04124719  0.05569860  0.00737746  0.01564232  0.02324971  0.00040789    105.80
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8155   / Degree    3.138372 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.138372  3.141593
+
+   5  -289.95649610  -289.95649541     0.00000069  0.04124461  0.05515021  0.00730482  0.01191385  0.01684530  0.00029553    129.30
+
+ Constraints section
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+ConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraintsConstraints
+Constraints                                                                                        Constraints
+Constraints                                 C O N S T R A I N T S                                  Constraints
+Constraints                                                                                        Constraints
+
+************************************************************************************************************************
+BO0001 = BOND       H7    C1
+BO0002 = BOND       H7    C17
+AN0001 = ANGLE      C1    H7    C17
+VALUES
+BO0001 =      1.80000000 ANGSTROM
+BO0002 =      1.20000000 ANGSTROM
+AN0001 =    180.00000000 DEGREE
+************************************************************************************************************************
+
+
+ *************************************************************
+ * Values of the primitive constraints                       *
+ *************************************************************
+ BO0001   : Bond Length=  1.800000 / Angstrom  3.401507 / bohr
+ BO0002   : Bond Length=  1.200000 / Angstrom  2.267671 / bohr
+  Valence angle close to end in range of definition
+ AN0001   : Angle=      179.8619   / Degree    3.139182 / rad
+
+ *******************************************
+ * Values of the constraints   / au or rad *
+ *******************************************
+   Label        C         C0
+ Cns001      3.401507  3.401507
+ Cns002      2.267671  2.267671
+ Cns003      3.139182  3.141593
+
+ Geometry section
+ Geometry section
+   6  -289.95649541  -289.95649326     0.00000215  0.00025739  0.00031994  0.00004618  0.02885585  0.04310960  0.00075631    154.99
+
+ END OF GEOMETRY OPTIMIZATION.
+
+ Current geometry (xyz format, in Angstrom)
+
+   19
+ CF-UKS-SCF001/SVP  ENERGY=-289.95649326
+ C         -8.0656299997        2.6000914533       -0.5600632805
+ C         -6.5810836189        2.4650976516       -0.6673322714
+ H         -8.5928624336        1.7508835368       -1.0214774789
+ H         -8.4315708779        3.5300457414       -1.0221582666
+ H         -8.3789159284        2.6296136637        0.5029529427
+ C         -5.7560118889        3.6729751636       -0.3668357807
+ C         -6.0084166636        1.0960780145       -0.4371725911
+ H         -6.4767159345        2.5017603752       -2.4639299535
+ H         -6.2225559269        4.5893311202       -0.7590399849
+ H         -4.7371394401        3.6044202363       -0.7754316326
+ H         -5.6498402560        3.8126225858        0.7283832796
+ H         -6.6055691129        0.3643712904       -1.0098242054
+ H         -6.1922566917        0.8272745161        0.6257749252
+ C         -4.5307850752        0.9099363684       -0.7474245617
+ H         -4.2994113462        1.1651784468       -1.7931899885
+ H         -4.2328959539       -0.1368948125       -0.5922977210
+ H         -3.8915768283        1.5295338630       -0.1015286852
+ C         -6.4146539376        2.5208194773       -3.6621724411
+ N         -6.3441880855        2.5366013081       -4.8160123046
+
+ **********************************************************************************************************************************
+
+ Geometry written to block  1 of record 700
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2       9       12.33       700     1000      520     2100     1800     2200      520(1)  2201      520(2)
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS    
+
+ PROGRAMS   *        TOTAL      OPTG    DF-UKS      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       356.42    154.99     23.15    172.05      2.91      2.81      0.38
+ REAL TIME  *       366.98 SEC
+ DISK USED  *        47.00 MB (local),      188.00 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.19 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group PBE=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+ Functional: PBEX                      Factor:  1.0000
+ Functional: PBEC                      Factor:  1.0000
+
+  129907 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+
+ Coulomb fitting
+ Screening thresholds:    THRAO_COUL= 1.0D-14    THRAO= 1.0D-12    THROV= 1.0D-12
+
+ Reserved 2 MW to cache 100.0% of significant integrals (8 MW global). CPU: 0.1 sec
+
+ Molecular orbitals read from record     2201.2  Type=UKS/ALPHA (state 1.1)
+ Molecular orbitals read from record     2201.2  Type=UKS/BETA (state 1.1)
+
+ Molecular orbital dump at record        2202.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS  CPU(IT) CPU(TOT)
+    1      0.000D+00      0.000D+00      -289.90913339    841.139490   -0.05852   -0.06834    1.88586    0      0.2      0.3
+    2      0.164D-02      0.565D-03      -289.91214900    841.593346   -0.05598   -0.06961    1.85600    1      0.2      0.4
+    3      0.583D-03      0.116D-03      -289.91249308    841.338449   -0.05495   -0.06924    1.84560    2      0.2      0.6
+    4      0.279D-03      0.536D-04      -289.91258525    841.445759   -0.05375   -0.06979    1.82859    3      0.2      0.8
+    5      0.909D-04      0.374D-04      -289.91260733    841.412135   -0.05411   -0.06962    1.84051    4      0.2      0.9
+    6      0.647D-04      0.224D-04      -289.91261796    841.382407   -0.05319   -0.06968    1.83432    5      0.2      1.1
+    7      0.341D-04      0.630D-05      -289.91262011    841.390729   -0.05319   -0.06986    1.83471    6      0.2      1.3
+    8      0.106D-04      0.245D-05      -289.91262035    841.390529   -0.05299   -0.06990    1.83462    7      0.2      1.5
+    9      0.425D-05      0.983D-06      -289.91262039    841.390279   -0.05297   -0.06991    1.83453    8      0.2      1.6
+   10      0.131D-05      0.490D-06      -289.91262040    841.390029   -0.05297   -0.06992    1.83444    8      0.2      1.8
+   11      0.718D-06      0.261D-06      -289.91262040    841.390127   -0.05296   -0.06992    1.83442    9      0.2      2.0
+   12      0.319D-06      0.936D-07      -289.91262040    841.390138   -0.05297   -0.06992    1.83442    9      0.2      2.1
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -289.912620404494
+ Nuclear energy                       283.37560198
+ One-electron energy                 -950.65169310
+ Two-electron energy                  420.69506924
+ Density functional                   -43.33159853     PBEX=-41.56062738 PBEC= -1.77097115
+ Virial quotient                       -1.01142472
+ !UKS STATE  1.1 Dipole moment         -0.05296926    -0.06991880     1.83441947
+ Dipole moment /Debye                  -0.13462561    -0.17770423     4.66232383
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -13.983680    -9.932916    -9.920311    -9.914618    -9.909764    -9.909435    -9.901033    -0.801309    -0.756277    -0.678628
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.637805    -0.577879    -0.509695    -0.477142    -0.424567    -0.419215    -0.401525    -0.383607    -0.360327    -0.354111
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.338687    -0.323207    -0.311156    -0.308118    -0.298061    -0.297325    -0.296914    -0.174694    -0.003525    -0.000836
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -13.983640    -9.921277    -9.918161    -9.915120    -9.910287    -9.909985    -9.900923    -0.800018    -0.744532    -0.675939
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.635524    -0.574770    -0.496570    -0.468681    -0.421191    -0.413011    -0.396437    -0.378528    -0.356239    -0.352811
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.337642    -0.320010    -0.308154    -0.304674    -0.296664    -0.295886    -0.295566    -0.116904    -0.001050     0.001909
+
+
+ HOMO     28.1    -0.174694 =      -4.7537eV
+ LUMO    -28.1    -0.116904 =      -3.1811eV
+ LUMO-HOMO         0.057790 =       1.5725eV
+
+ EXPECTATION VALUE OF S**2:             0.75292570
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   27
+ Number of active natural orbitals per symmetry:               1
+
+ Natural orbitals saved to record    2202.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       31.21       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2      10       15.84       700     1000      520     2100     1800     2200      520(1)  2201      520(2)  2202   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS     UKS  
+
+ PROGRAMS   *        TOTAL    DF-UKS      OPTG    DF-UKS      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       358.58      2.16    154.99     23.15    172.05      2.91      2.81      0.38
+ REAL TIME  *       369.19 SEC
+ DISK USED  *        47.11 MB (local),      188.46 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.19 MB       (current)
+ **********************************************************************************************************************************
+ SETTING BASIS          =    TZVP
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry C      S def2-TZVP            selected for orbital group  1
+ Library entry C      P def2-TZVP            selected for orbital group  1
+ Library entry C      D def2-TZVP            selected for orbital group  1
+ Library entry C      F def2-TZVP            selected for orbital group  1
+ Library entry H      S def2-TZVP            selected for orbital group  2
+ Library entry H      P def2-TZVP            selected for orbital group  2
+ Library entry N      S def2-TZVP            selected for orbital group  8
+ Library entry N      P def2-TZVP            selected for orbital group  8
+ Library entry N      D def2-TZVP            selected for orbital group  8
+ Library entry N      F def2-TZVP            selected for orbital group  8
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  C0      6.00  -15.241831722    4.913460746   -1.058366213
+   2  C1      6.00  -12.436445643    4.658359432   -1.261075227
+   3  H2      1.00  -16.238156626    3.308690361   -1.930312677
+   4  H3      1.00  -15.933359759    6.670819659   -1.931599180
+   5  H4      1.00  -15.833856326    4.969249638    0.950443315
+   6  C5      6.00  -10.877286040    6.940917122   -0.693219158
+   7  C6      6.00  -11.354261937    2.071287259   -0.826136466
+   8  H7      1.00  -12.239219303    4.727641938   -4.656152802
+   9  H8      1.00  -11.758926497    8.672578912   -1.434377689
+  10  H9      1.00   -8.951896156    6.811367084   -1.465353414
+  11  H10     1.00  -10.676650731    7.204812503    1.376444912
+  12  H11     1.00  -12.482716520    0.688561947   -1.908291182
+  13  H12     1.00  -11.701669240    1.563322265    1.182543224
+  14  C13     6.00   -8.561942921    1.719530527   -1.412427720
+  15  H14     1.00   -8.124709941    2.201868151   -3.388637968
+  16  H15     1.00   -7.999014067   -0.258693704   -1.119280477
+  17  H16     1.00   -7.354014398    2.890400099   -0.191861409
+  18  C17     6.00  -12.121939126    4.763658422   -6.920502935
+  19  N18     7.00  -11.988777964    4.793481759   -9.100944268
+
+ Bond lengths in Bohr (Angstrom)
+
+ 1-2  2.824244798  1-3  2.080442727  1-4  2.080638650  1-5  2.094975239  2-6  2.821968956
+     ( 1.494525985)     ( 1.100922880)     ( 1.101026558)     ( 1.108613154)     ( 1.493321661)
+
+  2- 7  2.837822357   6- 9  2.079725564   6-10  2.078485200   6-11  2.096045005   7-12  2.087198569
+       ( 1.501710920)       ( 1.100543373)       ( 1.099887001)       ( 1.109179250)       ( 1.104497917)
+
+  7-13  2.100836588   7-14  2.874807074   8-18  2.267671349  14-15  2.080679986  14-16  2.077545501
+       ( 1.111714846)       ( 1.521282390)       ( 1.200000000)       ( 1.101048432)       ( 1.099389734)
+
+ 14-17  2.078415019  18-19  2.184707243
+       ( 1.099849863)       ( 1.156097285)
+
+ Bond angles
+
+  1-2-6  117.47201775   1-2-7  116.75269286   2-1-3  112.08287083   2-1-4  112.10541047
+
+  2- 1- 5  110.60562433   2- 6- 9  111.56466655   2- 6-10  112.74577459   2- 6-11  110.69643497
+
+  2- 7-12  108.56036810   2- 7-13  107.69245041   2- 7-14  116.78800902   3- 1- 4  108.44777657
+
+  3- 1- 5  106.68353029   4- 1- 5  106.61965407   6- 2- 7  119.72559082   7-14-15  111.68147754
+
+  7-14-16  110.54335451   7-14-17  112.07410076   8-18-19  179.45502629   9- 6-10  108.19220122
+
+  9- 6-11  106.71644463  10- 6-11  106.61805365  12- 7-13  104.24924888  12- 7-14  109.77602590
+
+ 13- 7-14  109.02804010  15-14-16  107.32633654  15-14-17  107.76118942  16-14-17  107.22210354
+
+ NUCLEAR CHARGE:                   55
+ NUMBER OF PRIMITIVE AOS:         453
+ NUMBER OF SYMMETRY AOS:          418
+ NUMBER OF CONTRACTIONS:          289   (  289A   )
+ NUMBER OF CORE ORBITALS:           7   (    7A   )
+ NUMBER OF VALENCE ORBITALS:       40   (   40A   )
+
+
+ NUCLEAR REPULSION ENERGY  283.37560198
+
+
+ Eigenvalues of metric
+
+         1 0.119E-03 0.246E-03 0.297E-03 0.395E-03 0.407E-03 0.495E-03 0.530E-03 0.555E-03
+
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       33.38       500      610      700      900      950      970     1001      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2      11       15.89       700     1000      520     2100     1800     2200      520(1)  2201      520(2)  2202   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS     UKS  
+                                         1001   
+                                         BASIS   
+
+ PROGRAMS   *        TOTAL       INT    DF-UKS      OPTG    DF-UKS      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       358.79      0.20      2.16    154.99     23.15    172.05      2.91      2.81      0.38
+ REAL TIME  *       369.45 SEC
+ DISK USED  *        49.36 MB (local),      197.45 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       0.00 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group PBE=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+ Functional: PBEX                      Factor:  1.0000
+ Functional: PBEC                      Factor:  1.0000
+
+ Computed new grid on record 1800.1 in CPU time    0.1
+  234265 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+
+ Basis set DEF2-TZVPP/JFIT generated.    Number of basis functions:   475 
+ Coulomb fitting
+ Screening thresholds:    THRAO_COUL= 1.0D-14    THRAO= 1.0D-12    THROV= 1.0D-12
+
+ Reserved 5 MW to cache 100.0% of significant integrals (20 MW global). CPU: 0.2 sec
+
+ Molecular orbitals read from record     2202.2  Type=UKS/ALPHA (state 1.1)
+
+ Present basis size:      289
+ Previous basis size:     158
+ Previous occupation:      28
+ Previous closed-shells:   27
+ Previous core-orbitals:    7
+ Present occupation:       28
+ Present closed-shells:    27
+ Present core-orbitals:     7
+ Wavefunction symmetry:    1   Doublet 
+
+ Orbital overlap <old|new>:  < 1.1| 1.1> = 0.999986   < 2.1| 2.1> = 0.999987   < 3.1| 3.1> = 0.999983   < 4.1| 4.1> = 0.999986
+                             < 5.1| 5.1> = 0.999986   < 6.1| 6.1> = 0.999986   < 7.1| 7.1> = 0.999986   < 8.1| 8.1> = 0.999945
+                             < 9.1| 9.1> = 0.999929   <10.1|10.1> = 0.999922   <11.1|11.1> = 0.999926   <12.1|12.1> = 0.999914
+                             <13.1|13.1> = 0.999927   <14.1|14.1> = 0.999912   <15.1|15.1> = 0.999914   <16.1|16.1> = 0.999914
+                             <17.1|17.1> = 0.999906   <18.1|18.1> = 0.999912   <19.1|19.1> = 0.999911   <20.1|20.1> = 0.999903
+                             <21.1|21.1> = 0.999901   <22.1|22.1> = 0.999896   <23.1|23.1> = 0.999891   <24.1|24.1> = 0.999894
+                             <25.1|25.1> = 0.999838   <26.1|26.1> = 0.999747   <27.1|27.1> = 0.999779   <28.1|28.1> = 0.999855
+
+ Molecular orbitals read from record     2202.2  Type=UKS/BETA (state 1.1)
+
+ Present basis size:      289
+ Previous basis size:     158
+ Previous occupation:      28
+ Previous closed-shells:   27
+ Previous core-orbitals:    7
+ Present occupation:       28
+ Present closed-shells:    27
+ Present core-orbitals:     7
+ Wavefunction symmetry:    1   Doublet 
+
+ Orbital overlap <old|new>:  < 1.1| 1.1> = 0.999986   < 2.1| 2.1> = 0.999987   < 3.1| 3.1> = 0.999983   < 4.1| 4.1> = 0.999986
+                             < 5.1| 5.1> = 0.999986   < 6.1| 6.1> = 0.999986   < 7.1| 7.1> = 0.999986   < 8.1| 8.1> = 0.999946
+                             < 9.1| 9.1> = 0.999928   <10.1|10.1> = 0.999922   <11.1|11.1> = 0.999926   <12.1|12.1> = 0.999915
+                             <13.1|13.1> = 0.999928   <14.1|14.1> = 0.999914   <15.1|15.1> = 0.999915   <16.1|16.1> = 0.999917
+                             <17.1|17.1> = 0.999908   <18.1|18.1> = 0.999913   <19.1|19.1> = 0.999911   <20.1|20.1> = 0.999903
+                             <21.1|21.1> = 0.999901   <22.1|22.1> = 0.999896   <23.1|23.1> = 0.999889   <24.1|24.1> = 0.999892
+                             <25.1|25.1> = 0.999850   <26.1|26.1> = 0.999746   <27.1|27.1> = 0.999766   <28.1|28.1> = 0.999833
+
+
+ Molecular orbital dump at record        2203.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ ITERATION    DDIFF          GRAD             ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS  CPU(IT) CPU(TOT)
+    1      0.000D+00      0.000D+00      -290.08902976    841.576284   -0.05185   -0.06986    1.83719    0      0.3      0.7
+    2      0.103D-01      0.580D-02      -290.23067300    842.593740   -0.05780   -0.07558    1.86721    1      0.3      1.0
+    3      0.265D-02      0.243D-03      -290.23307438    841.841592   -0.05829   -0.07758    1.89270    2      0.3      1.3
+    4      0.166D-02      0.639D-04      -290.23339229    842.029808   -0.06244   -0.08082    1.93442    3      0.3      1.7
+    5      0.342D-03      0.310D-04      -290.23342623    841.798836   -0.05933   -0.08040    1.92522    4      0.4      2.0
+    6      0.878D-04      0.178D-04      -290.23343647    841.823093   -0.06061   -0.08070    1.93649    5      0.3      2.4
+    7      0.794D-04      0.683D-05      -290.23343856    841.839986   -0.06057   -0.08092    1.93506    6      0.3      2.7
+    8      0.213D-04      0.153D-05      -290.23343874    841.835224   -0.06042   -0.08095    1.93623    6      0.3      3.0
+    9      0.879D-05      0.600D-06      -290.23343877    841.834972   -0.06046   -0.08096    1.93634    7      0.3      3.3
+   10      0.196D-05      0.207D-06      -290.23343877    841.834834   -0.06045   -0.08097    1.93639    8      0.3      3.6
+   11      0.797D-06      0.972D-07      -290.23343877    841.835070   -0.06045   -0.08097    1.93643    8      0.3      4.0
+   12      0.310D-06      0.233D-07      -290.23343877    841.834997   -0.06046   -0.08097    1.93643    8      0.3      4.3
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -290.233438774381
+ Nuclear energy                       283.37560198
+ One-electron energy                 -951.11289584
+ Two-electron energy                  420.91749858
+ Density functional                   -43.41364349     PBEX=-41.65831007 PBEC= -1.75533342
+ Virial quotient                       -1.00510583
+ !UKS STATE  1.1 Dipole moment         -0.06045550    -0.08097370     1.93643148
+ Dipole moment /Debye                  -0.15365249    -0.20580113     4.92159552
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -13.977618    -9.925113    -9.908810    -9.903324    -9.896178    -9.895978    -9.886962    -0.816015    -0.766234    -0.688237
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.647311    -0.586968    -0.518056    -0.485376    -0.428663    -0.424444    -0.405530    -0.388008    -0.364865    -0.358034
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.342523    -0.326906    -0.314832    -0.311739    -0.309680    -0.303195    -0.302949    -0.179590    -0.016459    -0.015651
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -13.977538    -9.913836    -9.906747    -9.903705    -9.896575    -9.896401    -9.886860    -0.814629    -0.754455    -0.685634
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.645219    -0.583908    -0.504937    -0.476700    -0.425544    -0.418021    -0.400623    -0.383000    -0.360669    -0.356750
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.341466    -0.323686    -0.311944    -0.308469    -0.308148    -0.301784    -0.301527    -0.122277    -0.013922    -0.012964
+
+
+ HOMO     28.1    -0.179590 =      -4.8869eV
+ LUMO    -28.1    -0.122277 =      -3.3273eV
+ LUMO-HOMO         0.057313 =       1.5596eV
+
+ EXPECTATION VALUE OF S**2:             0.75319069
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   27
+ Number of active natural orbitals per symmetry:               1
+
+ Natural orbitals saved to record    2203.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       33.38       500      610      700      900      950      970     1001      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2      12       21.75       700     1000      520     2100     1800     2200      520(1)  2201      520(2)  2202   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS     UKS  
+                                         1001     2203   
+                                         BASIS     UKS  
+
+ PROGRAMS   *        TOTAL    DF-UKS       INT    DF-UKS      OPTG    DF-UKS      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       363.24      4.44      0.20      2.16    154.99     23.15    172.05      2.91      2.81      0.38
+ REAL TIME  *       374.08 SEC
+ DISK USED  *        55.22 MB (local),      220.89 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.19 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group PBE0=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2500
+
+ Functional: PBEX                      Factor:  0.7500
+ Functional: PBEC                      Factor:  1.0000
+
+  234265 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+
+ Coulomb fitting
+ Screening thresholds:    THRAO_COUL= 1.0D-14    THRAO= 1.0D-12    THROV= 1.0D-12
+
+ Reserved 5 MW to cache 100.0% of significant integrals (20 MW global). CPU: 0.2 sec
+
+ Molecular orbitals read from record     2203.2  Type=UKS/ALPHA (state 1.1)
+ Molecular orbitals read from record     2203.2  Type=UKS/BETA (state 1.1)
+
+ Molecular orbital dump at record        2204.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ Direct Fock-matrix evaluation.        Author: H.-J. Werner (1996)
+
+ Integral Threshold:                  0.1D-09
+
+ ITERATION   DDIFF            GRAD            ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   CPU(IT)  CPU(TOT)
+    1      0.000D+00      0.000D+00      -290.26450924    820.943701   -0.06046   -0.08097    1.93643    0     10.9     11.2
+    2      0.745D-03      0.485D-03      -290.26926573    820.519056   -0.06310   -0.08002    1.95995    1      9.7     20.9
+    3      0.367D-03      0.787D-04      -290.26971197    820.785477   -0.06401   -0.08052    1.96919    2      9.4     30.3
+    4      0.264D-03      0.319D-04      -290.26983631    820.717337   -0.06454   -0.08011    1.97541    3      9.4     39.7
+    5      0.893D-04      0.149D-04      -290.26985982    820.783223   -0.06479   -0.08031    1.96821    4      9.2     48.9
+    6      0.315D-04      0.109D-04      -290.26986568    820.787276   -0.06526   -0.08014    1.97350    5      8.8     57.7
+    7      0.155D-04      0.434D-05      -290.26986724    820.775752   -0.06511   -0.07997    1.97135    6      8.8     66.5
+    8      0.660D-05      0.137D-05      -290.26986746    820.778121   -0.06528   -0.07996    1.97130    7      8.6     75.1
+    9      0.282D-05      0.569D-06      -290.26986752    820.778186   -0.06528   -0.07994    1.97117    8      8.3     83.4
+   10      0.838D-06      0.305D-06      -290.26986754    820.778158   -0.06528   -0.07992    1.97117    8      8.0     91.4
+   11      0.418D-06      0.193D-06      -290.26986755    820.778070   -0.06529   -0.07992    1.97115    9      7.8     99.2
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -290.269867554885
+ Nuclear energy                       283.37560198
+ One-electron energy                 -951.03285648
+ Two-electron energy                  410.38903503
+ Density functional                   -33.00164809     PBEX=-41.65652371 PBEC= -1.75925531
+ Virial quotient                       -1.00594069
+ !UKS STATE  1.1 Dipole moment         -0.06528752    -0.07991912     1.97115064
+ Dipole moment /Debye                  -0.16593345    -0.20312084     5.00983705
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.380718   -10.266371   -10.253330   -10.242880   -10.235648   -10.235604   -10.226635    -0.923584    -0.866922    -0.780301
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.734998    -0.669366    -0.593240    -0.556995    -0.490869    -0.488014    -0.465951    -0.447164    -0.421484    -0.414530
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.397553    -0.380985    -0.377461    -0.367031    -0.363867    -0.354216    -0.354011    -0.226650     0.021760     0.022451
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.380826   -10.252902   -10.250567   -10.243550   -10.236336   -10.236320   -10.226501    -0.921955    -0.850656    -0.776988
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.732725    -0.665474    -0.573990    -0.544022    -0.487063    -0.477885    -0.459110    -0.439438    -0.415067    -0.412981
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.396166    -0.376931    -0.375042    -0.363496    -0.359791    -0.352937    -0.352687    -0.080737     0.024063     0.024959
+
+
+ HOMO     28.1    -0.226650 =      -6.1674eV
+ LUMO    -28.1    -0.080737 =      -2.1970eV
+ LUMO-HOMO         0.145912 =       3.9705eV
+
+ EXPECTATION VALUE OF S**2:             0.75508005
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   26
+ Number of active natural orbitals per symmetry:               3
+
+ Natural orbitals saved to record    2204.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       33.38       500      610      700      900      950      970     1001      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2      13       27.61       700     1000      520     2100     1800     2200      520(1)  2201      520(2)  2202   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS     UKS  
+                                         1001     2203     2204   
+                                         BASIS     UKS      UKS  
+
+ PROGRAMS   *        TOTAL    DF-UKS    DF-UKS       INT    DF-UKS      OPTG    DF-UKS      OPTG    DF-UKS     DF-HF       INT
+ CPU TIMES  *       462.51     99.27      4.44      0.20      2.16    154.99     23.15    172.05      2.91      2.81      0.38
+ REAL TIME  *       473.43 SEC
+ DISK USED  *        61.08 MB (local),      244.32 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.19 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group PBE0=PBEX+PBEC
+ Functional: PBEX(Automatically generated (new) PBEX)                          Gradient terms: 1
+ Functional: PBEC(Automatically generated (new) PBEC)                          Gradient terms: 1
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2500
+
+ Functional: PBEX                      Factor:  0.7500
+ Functional: PBEC                      Factor:  1.0000
+
+  234265 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+ Molecular orbitals read from record     2204.2  Type=UKS/ALPHA (state 1.1)
+ Molecular orbitals read from record     2204.2  Type=UKS/BETA (state 1.1)
+
+ Molecular orbital dump at record        2205.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ Direct Fock-matrix evaluation.        Author: H.-J. Werner (1996)
+
+ Integral Threshold:                  0.1D-10
+
+ ITERATION   DDIFF            GRAD            ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   CPU(IT)  CPU(TOT)
+    1      0.000D+00      0.000D+00      -290.26960014    820.778605   -0.06529   -0.07992    1.97115    0     10.9     10.9
+    2      0.400D-04      0.850D-05      -290.26960175    820.775045   -0.06531   -0.07992    1.97107    1      9.7     20.6
+    3      0.127D-04      0.145D-05      -290.26960184    820.775951   -0.06536   -0.07993    1.97098    2      9.4     30.0
+    4      0.451D-05      0.288D-06      -290.26960185    820.775817   -0.06539   -0.07993    1.97100    3      9.3     39.3
+    5      0.100D-05      0.145D-06      -290.26960185    820.776046   -0.06540   -0.07994    1.97093    4      9.0     48.3
+    6      0.359D-06      0.110D-06      -290.26960185    820.776076   -0.06541   -0.07994    1.97099    5      8.8     57.0
+    7      0.128D-06      0.575D-07      -290.26960185    820.776040   -0.06541   -0.07994    1.97097    6      8.3     65.3
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -290.269601851116
+ Nuclear energy                       283.37560198
+ One-electron energy                 -951.03187282
+ Two-electron energy                  410.38802006
+ Density functional                   -33.00135107     PBEX=-41.65606638 PBEC= -1.75930128
+ Virial quotient                       -1.00595458
+ !UKS STATE  1.1 Dipole moment         -0.06540852    -0.07993959     1.97097122
+ Dipole moment /Debye                  -0.16624098    -0.20317286     5.00938104
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.380755   -10.266393   -10.253421   -10.242901   -10.235694   -10.235648   -10.226682    -0.923585    -0.866924    -0.780307
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.735005    -0.669368    -0.593246    -0.557001    -0.490874    -0.488025    -0.465964    -0.447166    -0.421479    -0.414542
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.397554    -0.380981    -0.377434    -0.367032    -0.363865    -0.354236    -0.354031    -0.226630     0.021745     0.022437
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.380871   -10.252924   -10.250652   -10.243571   -10.236383   -10.236364   -10.226548    -0.921964    -0.850658    -0.776994
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.732731    -0.665476    -0.573996    -0.544026    -0.487067    -0.477891    -0.459121    -0.439442    -0.415063    -0.412992
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.396167    -0.376917    -0.375033    -0.363497    -0.359787    -0.352963    -0.352712    -0.080706     0.024046     0.024944
+
+
+ HOMO     28.1    -0.226630 =      -6.1669eV
+ LUMO    -28.1    -0.080706 =      -2.1961eV
+ LUMO-HOMO         0.145924 =       3.9708eV
+
+ EXPECTATION VALUE OF S**2:             0.75508759
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   26
+ Number of active natural orbitals per symmetry:               3
+
+ Natural orbitals saved to record    2205.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       33.38       500      610      700      900      950      970     1001      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2      14       33.47       700     1000      520     2100     1800     2200      520(1)  2201      520(2)  2202   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS     UKS  
+                                         1001     2203     2204     2205   
+                                         BASIS     UKS      UKS      UKS  
+
+ PROGRAMS   *        TOTAL   UKS-SCF    DF-UKS    DF-UKS       INT    DF-UKS      OPTG    DF-UKS      OPTG    DF-UKS     DF-HF
+ CPU TIMES  *       527.89     65.38     99.27      4.44      0.20      2.16    154.99     23.15    172.05      2.91      2.81
+ REAL TIME  *       538.87 SEC
+ DISK USED  *        66.94 MB (local),      267.75 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.19 MB       (current)
+ **********************************************************************************************************************************
+
+ Density functional group B3LYP=B88+DIRAC+LYP+VWN5
+ Functional: B88(Automatically generated (new) B88)                            Gradient terms: 1
+ Functional: DIRAC(Automatically generated (new) DIRAC)                        Gradient terms: 0
+ Functional: LYP(Automatically generated (new) LYP)                            Gradient terms: 1
+ Functional: VWN5(Automatically generated (new) VWN5)                          Gradient terms: 0
+ Use libxcgrid:  F
+ Use grid at  1800.2
+
+
+ Exact exchange will be calculated, factor:  0.2000
+
+ Functional: B88                       Factor:  0.7200
+ Functional: DIRAC                     Factor:  0.0800
+ Functional: LYP                       Factor:  0.8100
+ Functional: VWN5                      Factor:  0.1900
+
+  234265 words reserved for DFT integration
+
+ PROGRAM * UKS-SCF (Unrestricted Kohn-Sham)     Authors: W. Meyer, H.-J. Werner, P.J. Knowles, 1993
+
+ NUMBER OF ELECTRONS:      28+   27-    SPACE SYMMETRY=1    SPIN SYMMETRY: Doublet 
+ CONVERGENCE THRESHOLDS:    1.00E-06 (Density)    1.00E-06 (Energy)
+ INTEGRAL THRESHOLDS:       1.00E-11 (Initial)    1.00E-11 (Final)
+ MAX. NUMBER OF ITERATIONS:       60
+ INTERPOLATION TYPE:            DIIS
+ INTERPOLATION STEPS:              2 (START)      1 (STEP)
+ LEVEL SHIFTS:                 -0.20 (ALPHA)  -0.20 (BETA) 
+
+
+
+ Use fine grid record 1800.2 for energy threshold  1.0D-06
+ Molecular orbitals read from record     2205.2  Type=UKS/ALPHA (state 1.1)
+ Molecular orbitals read from record     2205.2  Type=UKS/BETA (state 1.1)
+
+ Molecular orbital dump at record        2206.2
+
+ Initial alpha occupation  28
+ Initial beta  occupation  27
+
+ Direct Fock-matrix evaluation.        Author: H.-J. Werner (1996)
+
+ Integral Threshold:                  0.1D-10
+
+ ITERATION   DDIFF            GRAD            ENERGY        2-EL.EN.            DIPOLE MOMENTS         DIIS   CPU(IT)  CPU(TOT)
+    1      0.000D+00      0.000D+00      -290.43995020    824.958301   -0.06541   -0.07994    1.97097    0     11.1     11.1
+    2      0.107D-02      0.392D-03      -290.44398657    825.324697   -0.06500   -0.07986    1.97762    1      9.9     21.0
+    3      0.210D-03      0.625D-04      -290.44418174    824.988986   -0.06342   -0.07980    1.95458    2      9.7     30.7
+    4      0.116D-03      0.291D-04      -290.44420950    825.003476   -0.06426   -0.07954    1.96742    3      9.5     40.2
+    5      0.369D-04      0.151D-04      -290.44421740    825.032013   -0.06333   -0.07936    1.95917    4      9.4     49.6
+    6      0.343D-04      0.557D-05      -290.44421919    825.008062   -0.06321   -0.07917    1.96043    5      9.4     59.0
+    7      0.977D-05      0.128D-05      -290.44421937    825.012481   -0.06325   -0.07921    1.96023    6      9.2     68.2
+    8      0.401D-05      0.651D-06      -290.44421942    825.010891   -0.06317   -0.07919    1.96029    7      9.1     77.3
+    9      0.159D-05      0.265D-06      -290.44421943    825.010904   -0.06316   -0.07918    1.96030    7      8.9     86.2
+   10      0.623D-06      0.136D-06      -290.44421943    825.010908   -0.06316   -0.07919    1.96030    8      8.7     94.9
+   11      0.225D-06      0.721D-07      -290.44421944    825.010936   -0.06316   -0.07919    1.96031    8      8.4    103.3
+
+ Final alpha occupancy:  28
+ Final beta  occupancy:  27
+
+ !UKS STATE  1.1 Energy              -290.444219435883
+ Nuclear energy                       283.37560198
+ One-electron energy                 -951.03792738
+ Two-electron energy                  412.50546824
+ Density functional                   -35.28736228     B88=-41.92501512 DIRAC=-37.69232684 LYP= -1.76750574 VWN5= -3.44360840
+ Virial quotient                       -1.00551210
+ !UKS STATE  1.1 Dipole moment         -0.06316184    -0.07919019     1.96031120
+ Dipole moment /Debye                  -0.16053087    -0.20126821     4.98228775
+
+ Orbital energies for positive spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.313400   -10.208854   -10.201683   -10.189597   -10.183695   -10.183529   -10.174509    -0.898259    -0.840302    -0.756859
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.713233    -0.649181    -0.575875    -0.540338    -0.475805    -0.472903    -0.451327    -0.433804    -0.409452    -0.402515
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.386135    -0.369463    -0.364109    -0.356120    -0.353258    -0.341336    -0.341137    -0.214104     0.014005     0.014569
+
+ Orbital energies for negative spin:
+
+         1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+    -14.313444   -10.199056   -10.196363   -10.190142   -10.184259   -10.184119   -10.174384    -0.896639    -0.825913    -0.753793
+
+        11.1         12.1         13.1         14.1         15.1         16.1         17.1         18.1         19.1         20.1
+     -0.710886    -0.645541    -0.559274    -0.528481    -0.472311    -0.464016    -0.445193    -0.426956    -0.403429    -0.401028
+
+        21.1         22.1         23.1         24.1         25.1         26.1         27.1         28.1         29.1         30.1
+     -0.384709    -0.365258    -0.362302    -0.352876    -0.349168    -0.340043    -0.339813    -0.090922     0.015791     0.016344
+
+
+ HOMO     28.1    -0.214104 =      -5.8261eV
+ LUMO    -28.1    -0.090922 =      -2.4741eV
+ LUMO-HOMO         0.123182 =       3.3520eV
+
+ EXPECTATION VALUE OF S**2:             0.75416476
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:   27
+ Number of active natural orbitals per symmetry:               1
+
+ Natural orbitals saved to record    2206.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:       27
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19       33.38       500      610      700      900      950      970     1001      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700     1800   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER     GRID   
+
+              2      15       39.32       700     1000      520     2100     1800     2200      520(1)  2201      520(2)  2202   
+                                         GEOM     BASIS   MCVARS     RHF     GRID      UKS    MCVARS     UKS    MCVARS     UKS  
+                                         1001     2203     2204     2205     2206   
+                                         BASIS     UKS      UKS      UKS      UKS  
+
+ PROGRAMS   *        TOTAL   UKS-SCF   UKS-SCF    DF-UKS    DF-UKS       INT    DF-UKS      OPTG    DF-UKS      OPTG    DF-UKS
+ CPU TIMES  *       631.25    103.36     65.38     99.27      4.44      0.20      2.16    154.99     23.15    172.05      2.91
+ REAL TIME  *       642.31 SEC
+ DISK USED  *        72.79 MB (local),      291.17 MB (total)
+ SF USED    *        36.41 MB
+ GA USED    *         3.27 MB       (max)       2.19 MB       (current)
+ **********************************************************************************************************************************
+
+ UB3LYP/TZVP//CF-UKS/SVP energy=   -290.444219435883
+
+         UKS-SCF         UKS-SCF          DF-UKS          DF-UKS          DF-UKS    OPTG(DF-UKS)          DF-UKS    OPTG(DF-UKS)
+   -290.44421944   -290.26960185   -290.26986755   -290.23343877   -289.91262040   -289.95649326   -289.95539292   -289.91377960
+ **********************************************************************************************************************************
+ Molpro calculation terminated with 1 warning(s)

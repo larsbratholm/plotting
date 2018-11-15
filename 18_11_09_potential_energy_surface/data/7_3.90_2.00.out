@@ -1,0 +1,61 @@
+
+ Primary working directories    : /mnt/storage/home/lb17101/scratch/1382511/molpro.QafaVT5pRZ
+ Secondary working directories  : /mnt/storage/home/lb17101/scratch/1382511/molpro.QafaVT5pRZ
+ Wavefunction directory         : /mnt/storage/home/lb17101/optimizations/7/
+ Main file repository           : /mnt/storage/home/lb17101/optimizations/7/
+
+ id        : simonbennie
+
+ Nodes                   nprocs
+ compute075.bc4.acrc.priv    4
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=sf  
+
+
+ Variables initialized (924), CPU time= 0.00 sec
+ memory,536,m
+ 
+ geomtyp=xyz
+ 
+ nosym
+ noorient
+ gdirect
+ angstrom
+ 
+ geometry=input.xyz
+ Including file /mnt/storage/home/lb17101/optimizations/7/input.xyz
+ 
+ set,charge=0
+ 
+ basis=svp
+ cf-uks,pbe
+ {cf-uks,pbe,nitord=1,maxit=200;shift,-1.0,-0.5}
+ {optg,method=slrf,maxiter=17;
+ constraint,3.900,angstrom,bond,atoms=[H7,C1]
+ constraint,2.000,angstrom,bond,atoms=[H7,C17]
+ constraint,180,deg,angle,atoms=[C1,H7,C17]
+ {slopt;cart;}}
+ {cf-uks,pbe0,nitord=1,maxit=200;shift=-1.0,-0.5}
+ {optg,method=slrf,maxiter=40;
+ constraint,3.900,angstrom,bond,atoms=[H7,C1]
+ constraint,2.000,angstrom,bond,atoms=[H7,C17]
+ constraint,180,deg,angle,atoms=[C1,H7,C17]
+ {slopt;}}
+ {cf-uks,pbe;}
+ basis=tzvp
+ {cf-uks,pbe;}
+ {cf-uks,pbe0;}
+ {uks,pbe0;}
+ {uks,b3lyp;}
+ Commands  initialized (760), CPU time= 0.01 sec, 616 directives.
+ Default parameters read. Elapsed time= 0.05 sec
+
+ Checking input...
+
+ Input error: Attempt to set Variable SHIFT in command block
+ ? Error
+ ? Input error
+ ? The problem occurs in check_input
+
+ GLOBAL ERROR fehler on processor   0                                         
