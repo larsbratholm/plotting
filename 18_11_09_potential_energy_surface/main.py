@@ -8,28 +8,37 @@ def open_pickle(filename):
     with open(filename, "rb") as f:
         return pickle.load(f)
 
-# exp/primary: -26
-# cf-upbe/tzvp/primary: -24.41321864
-# cf-upbe0/tzvp/primary: 
 
 if __name__ == "__main__":
     data = open_pickle("data.pkl")
 
+    # 7 is tertiary, 10 primary and 11 secondary
     idx = 7
 
+    # x is R-H distance. y is NC-H distance. z is CF-uPBE/TZVP energy
     x,y,z = data[idx][:,0], data[idx][:,1], data[idx][:,5]
+    # Convert to kcal/mol
     z *= 627.509
+    # Subtract reference
     z -= np.min(z)
 
+    # Get the unique elements (the grid points).
+    # Due to convergence issues I only consider up to 3Å,
+    # even though the data has values up to 3.9.
     uniq = np.unique(np.concatenate([x,y]))[:-3]
+    # Look up table to convert a distance to the index in the grid
     value_to_index = {}
     for i, v in enumerate(uniq):
         value_to_index[v] = i
 
+    # create grids
     X,Y = np.meshgrid(uniq,uniq)
 
+    # Make an array. Could probably use a float np.array with
+    # np.nan instead of None
     Z = [[None for i in range(uniq.size)] for j in range(uniq.size)]
 
+    # Fill the array
     for a,b,c in zip(x,y,z):
         if a not in value_to_index or b not in value_to_index:
             continue
